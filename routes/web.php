@@ -2,6 +2,22 @@
 
 /*
 |--------------------------------------------------------------------------
+| Pet Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for PET API application.
+|
+*/
+
+Route::get('/pet/search','PetController@petSearch');
+Route::get('/pet/data','PetController@petDataAvailable');
+Route::get('/pet','PetController@index');
+
+
+
+
+/*
+|--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
 |
@@ -11,6 +27,10 @@
 |
 */
 
+Route::get('/call','testCarController@index');
+Route::get('/holi','Holiday@index');
 Route::get('/', function () {
     return view('welcome');
 });
+
+
