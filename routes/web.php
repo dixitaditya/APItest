@@ -9,7 +9,9 @@
 |
 */
 
+Route::get('/pet/test','PetController@test');
 Route::get('/pet/search','PetController@petSearch');
+Route::get('/pet/data/view','PetController@petDataAvailableView');
 Route::get('/pet/data','PetController@petDataAvailable');
 Route::get('/pet','PetController@index');
 
